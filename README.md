@@ -25,6 +25,7 @@ BuddhaFi is a community-driven Solana-based memecoin launched fairly via [Pump.f
 - 🪙 Token: [Buy $BUDDHA on Pump.fun](https://pump.fun/coin/BkBRPHqMETUD4gg7kgzGg38dqS9bR7hFaNAgMJYipump)
 - 🌐 Website: [https://buddhafi.org](https://buddhafi.org)
 - 🐦 Twitter: [@buddha_fi](https://x.com/buddha_fi)
+- 📱 Telegram: [BuddhaFi](https://t.me/buddhaficoin)
 - 🧘‍♂️ Slogan: _Be still, like Buddha — in a storm of volatility._
 
 ---
