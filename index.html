@@ -9,13 +9,61 @@
 </head>
 
 <body class="bg-gradient-to-b from-yellow-50 to-teal-100 text-gray-900 font-sans">
+    <style>
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
 
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .sparkle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+            animation: sparkle 8s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) scale(0.5);
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+        <!-- Sparkles -->
+        <div class="sparkle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="sparkle" style="left: 25%; animation-delay: 1s;"></div>
+        <div class="sparkle" style="left: 40%; animation-delay: 2s;"></div>
+        <div class="sparkle" style="left: 60%; animation-delay: 3s;"></div>
+        <div class="sparkle" style="left: 80%; animation-delay: 4s;"></div>
+    </div>
     <main class="min-h-screen">
         <!-- Hero -->
         <section class="text-center py-20 px-4">
             <h1 class="text-5xl font-bold mb-4">$BUDDHA</h1>
             <p class="text-xl italic mb-6">Be still, like Buddha — in a storm of volatility.</p>
-            <img src="./assets/logo.png" alt="$BUDDHA Coin" class="mx-auto w-48 mb-6 rounded-full" />
+            <img src="./assets/logo.png" alt="$BUDDHA Coin" class="floating mx-auto w-48 mb-6 rounded-full" />
             <a href="https://pump.fun/coin/BkBRPHqMETUD4gg7kgzGg38dqS9bR7hFaNAgMJYipump" target="_blank"
                 class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-full shadow-md transition">
                 Buy $BUDDHA
@@ -50,32 +98,16 @@
             </div>
         </section>
 
-        <!-- Telegram Section -->
-        <section class="text-center py-20 px-4 bg-yellow-100">
-            <h2 class="text-2xl font-bold mb-4">🛕 Join the BuddhaFi Temple</h2>
-            <p class="mb-6 text-lg">Connect directly with the community. Stillness meets memes, live.</p>
-
-            <!-- Telegram Embed Widget -->
-            <div class="flex justify-center">
-                <iframe src="https://t.me/buddhaficoin?embed=1" width="350" height="500" frameborder="0" scrolling="no"
-                    allowtransparency="true"
-                    style="border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);"></iframe>
-            </div>
-
-            <p class="mt-4 text-sm text-gray-700">Or <a href="https://t.me/buddhafi" class="text-blue-700 underline"
-                    target="_blank">open in Telegram</a></p>
-        </section>
-
-        <!-- Twitter Feed -->
-        <section class="text-center py-20 px-4 bg-white">
-            <h2 class="text-2xl font-bold mb-6">🧵 Latest from @buddha_fi</h2>
-            <div class="flex justify-center">
-                <blockquote class="twitter-timeline" data-theme="light" data-height="500" data-width="350"
-                    href="https://twitter.com/buddha_fi?ref_src=twsrc%5Etfw">
-                    Tweets by @buddha_fi
-                </blockquote>
-            </div>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- Dharma Quote Section -->
+        <section class="text-center py-20 px-6 bg-yellow-100">
+            <h2 class="text-2xl font-bold mb-6">🧘 Words of Dharma</h2>
+            <blockquote class="text-xl italic max-w-2xl mx-auto text-white">
+                “Do not dwell in the past, do not dream of the future, concentrate the mind on the present
+                moment.”<br />
+                — Buddha
+            </blockquote>
+            <p class="mt-6 text-lg text-gray-700">BuddhaFi is more than a coin. It's a reminder to be still, stay
+                grounded, and meme with purpose.</p>
         </section>
 
         <!-- Links -->
@@ -94,7 +126,7 @@
                     <a href="https://buddhafi.org" target="_blank">Visit Official Website</a>
                 </li>
                 <li>
-                    <a href="https://github.com/YOUR_REPO" target="_blank">View GitHub Project</a>
+                    <a href="https://github.com/BuddhaFi" target="_blank">View GitHub Project</a>
                 </li>
             </ul>
         </section>
